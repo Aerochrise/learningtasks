@@ -1,0 +1,49 @@
+#h1 {
+    
+margin: 0 auto;
+padding: 50px;
+position: absolute;
+top: 2%;
+left: 45%;
+font-size: 35px;    
+    
+    
+  
+}
+
+
+#p {
+    
+ margin: 0 auto;
+padding: 50px;
+position: absolute;
+top: 30%;
+left: 25%; 
+font-size: 45px;
+color: antiquewhite; 
+font-family: 'Dancing Script', cursive;
+    
+    
+}
+
+#body {
+    
+  background-image: url(pub.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center;
+    height: 800px;
+    
+}
+
+
+#p2{
+    margin: 0 auto;
+padding: 50px;
+position: absolute;
+top: 45%;
+left: 60%; 
+font-size: 45px;
+color: antiquewhite; 
+font-family: 'Dancing Script', cursive;
+}
