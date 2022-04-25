@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Learning Task 5</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <img src="logo%20updated.png">
+                </div>
+                <div class="nav-links">
+                     <ul>
+                           <li class="active"><a href="Index.html">Home</a></li>
+                           <li><a href="Classes.html">Classes</a></li>
+                           
+                
+                
+                    </ul>
+                  </div>
+            </nav>
+            
+            <div class="information">
+                <div class="hide"></div>
+                <img src="argenta.png" class="argenta">
+                 <div id="circle">
+                      <div class="feature one">
+                          <img src="fire.png">
+                          <div>
+                          <h1>Pyro</h1>
+                              <p>it is very stong for offense</p>
+                          </div>
+                      </div>
+                      <div class="feature two">
+                          <img src="water.png">
+                          <div>
+                          <h1>Hydro</h1>
+                              <p>flow of energy</p>
+                          </div>
+                     </div>
+                      <div class="feature three">
+                          <img src="earth.png">
+                          <div>
+                          <h1>Geo</h1>
+                              <p>both offense and defense</p>
+                          </div>
+                     </div>
+                      <div class="feature four">
+                          <img src="wind.png">
+                          <div>
+                          <h1>Anemo</h1>
+                              <p>A speed and evasion</p>
+                          </div>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                 <img src="arrow.png" id="upBtn"> 
+                <h3>Elements</h3>
+                 <img src="arrow.png" id="downBtn"> 
+            </div>
+            
+        </div>        
+
+        
+        <script>
+             var circle = document.getElementById("circle");
+             var upBtn = document.getElementById("upBtn");
+             var downBtn = document.getElementById("downBtn");
+             
+             var rotateValue = circle.style.transform;
+             var rotateSum;
+            
+             upBtn.onclick = function()
+             {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum; 
+             }
+             downBtn.onclick = function()
+             {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum; 
+             }
+             
+        </script>
+        
+        
+    </body>
+</html>
