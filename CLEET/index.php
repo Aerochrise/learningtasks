@@ -19,11 +19,11 @@ $show = (isset($_GET['subpage']) && $_GET['subpage'] != '') ? $_GET['subpage'] :
             </div>
             <div id="menu">
                 <ul>
-                    <li><a href="index.php?subpage=2">Learning Task 2</a></li>
-                    <li><a href="index.php?subpage=3">Learning task 3</a></li>
-                    <li><a href="index.php?subpage=CLE">CLE Midterm</a></li>
-                    <li><a href="index.php?subpage=4">Learning Task 4</a></li>
-                    <li><a href="index.php?subpage=5">Learning Task 5</a></li>
+                    <li><a href="index.php?subpage=LT2">Learning Task 2</a></li>
+                    <li><a href="index.php?subpage=LT3">Learning task 3</a></li>
+                    <li><a href="index.php?subpage=CLE1MT">CLE Midterm</a></li>
+                    <li><a href="index.php?subpage=LT4">Learning Task 4</a></li>
+                    <li><a href="index.php?subpage=LT5">Learning Task 5</a></li>
                 </ul>
             </div>
             
@@ -32,20 +32,20 @@ $show = (isset($_GET['subpage']) && $_GET['subpage'] != '') ? $_GET['subpage'] :
             <div id="contents">
                 <?php
                 switch($show ){
-                    case '2':
+                    case 'LT2':
                     include_once 'Homepage.html';
                         break;
-                    case '3':
+                    case 'LT3':
                     include_once 'Learning task 3.1.html';
                         break;
-                    case 'CLE':
-                    include_once 'Website.html';
-                        break;
-                    case '4':
+                    case 'LT4':
                     include_once 'Learning4.html';
                         break;
-                    case '5':
+                    case 'LT5':
                     include_once 'L5.html';
+                        break;
+                    case 'CLE1MT':
+                    include_once 'Website.html';
                         break;
                     default:
                     include_once 'main.php';
